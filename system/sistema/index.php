@@ -7,7 +7,7 @@
         <link href="<?php echo $ruta_base;?>/assets/css/plugins/calendario/calendario.min.css" rel="stylesheet">
         <div class="row  border-bottom white-bg dashboard-header">
             <div id='wrap'>
-                <div id='calendar'></div>
+                <div id='calendar' class="col-xs-offset-2 col-xs-8"></div>
                 <div style='clear:both'></div>
             </div>
         </div>

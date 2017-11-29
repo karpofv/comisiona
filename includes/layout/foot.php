@@ -3,6 +3,7 @@
 </div>
 <!-- Mainly scripts -->
     <script src="<?php echo $ruta_base;?>/assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="<?php echo $ruta_base; ?>/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="<?php echo $ruta_base;?>/assets/js/bootstrap.min.js"></script>
     <script src="<?php echo $ruta_base;?>/assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="<?php echo $ruta_base;?>/assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
@@ -13,6 +14,7 @@
     <script src="<?php echo $ruta_base;?>/assets/js/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Toastr -->
     <script src="<?php echo $ruta_base;?>/assets/js/plugins/toastr/toastr.min.js"></script>
+    <script src="<?php echo $ruta_base;?>/assets/js/plugins/sweetalert/sweetalert.min.js"></script>
     <!-- Tinycon -->
     <script src="<?php echo $ruta_base;?>/assets/js/plugins/tinycon/tinycon.min.js"></script>
     <script src="<?php echo $ruta_base;?>/assets/js/publics.js"></script>
@@ -25,7 +27,7 @@
                     showMethod: 'slideDown',
                     timeOut: 4000
                 };
-                toastr.error('Administración de prestamos', 'Bienvenido a FONJUPROF');
+                toastr.error('Gestión de comisión asesora', 'Bienvenido');
             }, 1300);
         });
 </script>

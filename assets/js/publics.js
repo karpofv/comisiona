@@ -1,4 +1,4 @@
-function controler(xdata, xventana) {
+function controler(xdata, xventana, xsuccess) {
     $.ajax({
         url: 'control.php'
         , type: 'POST'
@@ -6,6 +6,7 @@ function controler(xdata, xventana) {
         , ajaxSend: $('#' + xventana).html(cargando)
         , success: function (html) {
             $('#'+xventana).html(html);
+            xsuccess;
         }
     });
 }

@@ -13,12 +13,14 @@
 
     <!-- Toastr style -->
     <link href="<?php echo $ruta_base;?>/assets/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <link href="<?php echo $ruta_base;?>/assets/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">    
 
     <!-- Gritter -->
     <link href="<?php echo $ruta_base;?>/assets/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
 
     <link href="<?php echo $ruta_base;?>/assets/css/animate.css" rel="stylesheet">
     <link href="<?php echo $ruta_base;?>/assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo $ruta_base; ?>/assets/css/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
 
 </head>
 

@@ -260,5 +260,10 @@ class paraTodos
             return false;
         }
     }
+    public static function alerta($msg, $type) {
+        if ($msg <> '') {
+            echo "<script>swal('','$msg', '$type');</script>";
+        }
+    }
 }
 ?>

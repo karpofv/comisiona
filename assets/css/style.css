@@ -39,7 +39,7 @@ h5 {
   font-weight: 600;
 }
 .nav > li > a {
-  color: #bfbfbf;
+  color: #ffffff;
   font-weight: 600;
   padding: 14px 20px 14px 25px;
 }
@@ -51,7 +51,7 @@ h5 {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus {
-  background-color: #223950;
+  background-color: #a46b3b;
   color: white;
 }
 .nav .open > a,
@@ -170,7 +170,7 @@ h5 {
 .nav-header {
   padding: 33px 25px;
   background-color: #2f4050;
-  background-image: url("../img/patterns/header-profile-skin-2.png");
+  background-image: url("../img/patterns/header-profile-skin-3.png");
     background-size: cover;
 }
 .pace-done .nav-header {
@@ -178,7 +178,7 @@ h5 {
 }
 .nav > li.active {
   border-left: 4px solid #ffffff;
-  background: #26405a;
+  background: #e99a40;
 }
 .nav.nav-second-level > li.active {
   border: none;
@@ -253,7 +253,7 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-seco
 .mini-navbar .nav li:focus > .nav-second-level {
   display: block;
   border-radius: 0 2px 2px 0;
-  min-width: 140px;
+  min-width: 240px;
   height: auto;
 }
 body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
@@ -270,7 +270,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
   position: absolute;
   left: 70px;
   top: 0;
-  background-color: #2f4050;
+  background-color: #e99a40;
   padding: 10px 10px 10px 10px;
   font-size: 12px;
 }
@@ -391,8 +391,17 @@ body.mini-navbar .navbar-static-side {
 }
 body.mini-navbar .profile-element,
 body.mini-navbar .nav-label,
-body.mini-navbar .navbar-default .nav li a span {
-  display: none;
+body.mini-navbar .nav li a span {
+  display: block;
+}
+body.mini-navbar .navbar-default .nav li.li-sub {
+  padding: 0px;
+}
+body.mini-navbar .navbar-default .nav li a .sp-princ{
+  display: none !important;
+}
+.navbar-default .nav li.li-sub{
+  padding: 10px;
 }
 body.canvas-menu .profile-element {
   display: block;
@@ -3368,7 +3377,7 @@ body.tour-open .animated {
 }
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgba(21, 32, 58, 0.94);
+  background-color: rgba(160, 105, 21, 0.94);
   font-size: 13px;
   color: #000000;
   overflow-x: hidden;
@@ -3824,8 +3833,8 @@ code {
   min-height: 48px;
 }
 .ibox-content {
-  //background-color: #ffffff;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   padding: 15px 20px 20px 20px;
   border-color: #e7eaec;
   border-image: none;

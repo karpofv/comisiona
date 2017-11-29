@@ -21,8 +21,7 @@ include("includes/layout/headp.php");
             }
             ?>
             <div class="loginColumns col-md-12">
-                <div class="ibox-content">
-                    <form class="m-t" role="form" action="index2.php" method="post">
+                    <form class="m-t" role="form" action="index2.php" method="post" style="color:white;">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Usuario" id="user" name="user" required="">
                         </div>
@@ -32,7 +31,6 @@ include("includes/layout/headp.php");
                         <button type="submit" class="btn block full-width m-b" style="background-color:white; color:black;">Ingresar</button>
                         <a href="#" style="color:white;"> <small>¿Olvidó la contraseña?</small> </a>
                     </form>
-                </div>
             </div>
             <div class="row" style="color:white;">
                 <div class="col-md-12 text-center"> <b>Copyright UNELLEZ</b> </div>

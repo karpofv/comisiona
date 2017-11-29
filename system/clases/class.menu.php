@@ -11,13 +11,13 @@ Class Menu {
             $consulsubmenu = paraTodos::arrayConsulta("*","menu_submenu sm, perfiles_det pd","sm.subm_codigo=pd.perdet_submcodigo and subm_conexion=$subc and subm_status=1 and subm_nivel=$nivel and perdet_S=1");
         }
         foreach($consulsubmenu as $submenu){
-            if (strlen($submenu['subm_descripcion']) > 14) {
-                $submenuli = substr($submenu['subm_descripcion'],0,14).'... ';
+            if (strlen($submenu['subm_descripcion']) > 25) {
+                $submenuli = substr($submenu['subm_descripcion'],0,25).'... ';
             } else {
                 $submenuli = $submenu['subm_descripcion'];
             }
 ?>
-            <li style="padding:10px;">
+            <li class="li-sub">
                 <a href="#" title="<?php echo $submenu['subm_descripcion']; ?>" style="color: white;" onclick="controler('dmn=<?php echo $submenu['subm_codigo'];?>&ver=1', 'verContenido')">
                     <i class="<?php echo $submenu[subm_icono]?>"></i>
                     <span><?php echo $submenuli; ?></span>
@@ -45,7 +45,7 @@ Class Menu {
         <li>
             <a href="#" title="<?php echo $menu['menu_descripcion']; ?>">
                 <i class="<?php echo $menu[menu_icono]?>"></i>
-                <span class="nav-label"><?php echo $menuli; ?></span><span class="fa arrow"></span>
+                <span class="nav-label sp-princ"><?php echo $menuli; ?></span><span class="fa arrow sp-princ"></span>
             </a>
             <ul class="nav nav-second-level collapse">
                 <?php
