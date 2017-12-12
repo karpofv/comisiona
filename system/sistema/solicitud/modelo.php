@@ -36,14 +36,14 @@
             $delete = paraTodos::arrayDelete("carr_codigo=$codigo", "carrera");
             if($delete){
                 paraTodos::alerta("Registro eliminado", 'success');
-            }      
-        }    
+            }
+        }
         $eliminar = "";
         $codigo = "";
     }
     if($editar==1 and $codigo!="" and $carrera==""){
         $consulsolicitudes = paraTodos::arrayConsulta("*", "carrera", "carr_codigo=$codigo");
-        foreach($consulcarreras as $carreras){        
+        foreach($consulcarreras as $carreras){
             $selsubins = "";
             $selsubpre = "";
             $selperiodo = "";
@@ -51,5 +51,5 @@
             $txtcarrera = $carreras[carr_descripcion];
         }
     }
-    $consulcarreras = paraTodos::arrayConsulta("*", "carrera, tools_status", "carr_status=st_codigo");
+    $consulsol = paraTodos::arrayConsulta("*", "solicitud s, persona p, tools_status", "sol_tipo=2 and s.sol_percodigo=p.per_codigo and p.per_cedula=$_SESSION[ci] and sol_status=st_codigo");
 ?>

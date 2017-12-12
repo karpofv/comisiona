@@ -51,7 +51,7 @@ h5 {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus {
-  background-color: #a46b3b;
+  background-color: ;
   color: white;
 }
 .nav .open > a,
@@ -178,7 +178,7 @@ h5 {
 }
 .nav > li.active {
   border-left: 4px solid #ffffff;
-  background: #e99a40;
+  background: #ff9800;
 }
 .nav.nav-second-level > li.active {
   border: none;
@@ -1891,17 +1891,15 @@ div.dt-button-info {
 }
 .form-control,
 .single-line {
-  background-color: rgba(0, 0, 0, 0.25);
     border: none;
-  background-image: none;
-  border-bottom: 1px solid #f59910;
-  border-radius: 1px;
-  color: inherit;
-  display: block;
-  padding: 6px 12px;
-  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 100%;
-  font-size: 14px;
+    background-image: none;
+    border-bottom: 1px solid #f59910;
+    border-radius: 1px;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    font-size: 14px;
 }
 .form-control:focus,
 .single-line:focus {
@@ -3377,7 +3375,7 @@ body.tour-open .animated {
 }
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgba(160, 105, 21, 0.94);
+  background-color: #e65100;
   font-size: 13px;
   color: #000000;
   overflow-x: hidden;
@@ -8417,6 +8415,7 @@ body.md-skin {
 }
 
 .img-perfil-menu {
+    margin-left: 19%;
     width: 90px;
 }
 
