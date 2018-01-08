@@ -14,8 +14,8 @@ if ($editar=='1' and $codigo==""){
     if ($consulu>0){
         paraTodos::showMsg("Esta persona ya se encuentra registrada", "alert-danger");
     } else{
+        paraTodos::arrayInserte("per_cedula, per_nombres, per_apellidos", "persona", "$cedula, '$nombre', '$apellido'");        
         paraTodos::arrayInserte("Cedula, Usuario, Nivel, contrasena, Tipo", "usuarios", "$cedula, '$usuario', '$tipo', '$pass', 'Empleado'");
-        paraTodos::arrayInserte("per_cedula, per_nombres, per_apellidos", "persona", "$cedula, '$nombre', '$apellido'");
     }
     $cedula ="";
     $nombre ="";

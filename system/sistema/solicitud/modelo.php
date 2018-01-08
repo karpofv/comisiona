@@ -6,7 +6,7 @@
     $selsubpre = $_POST[selsubpre];
     $selperiodo = $_POST[selperiodo];
     if($editar==1 and $codigo=="" and $selsubins!=""){
-        $insertar = paraTodos::arrayInserte("sol_fecha, sol_percodigo, sol_subproyecto_inscribir, sol_periodoacad, sol_subproyecto_prelacion, sol_tipo", "solicitud", "'$txtfecha',1,'$selsubins', '$selperiodo','$selsubpre',2");
+        $insertar = paraTodos::arrayInserte("sol_fecha, sol_percodigo, sol_subproyecto_inscribir, sol_periodoacad, sol_subproyecto_prelacion, sol_tipo", "solicitud", "'$txtfecha',1,'$selsubins', '$selperiodo','$selsubpre',1");
         if($insertar){
             paraTodos::alerta("Registro exitoso", 'success');
         }

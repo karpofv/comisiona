@@ -6,9 +6,9 @@ Class Menu {
     <ul style="list-style: none;">
         <?php
         if($nivel==1){
-            $consulsubmenu = paraTodos::arrayConsulta("*","menu_submenu sm, perfiles_det pd","sm.subm_codigo=pd.perdet_submcodigo and subm_menucodigo=$codigo and subm_status=1 and subm_nivel=1 and perdet_S=1");
+            $consulsubmenu = paraTodos::arrayConsulta("distinct sm.*","menu_submenu sm, perfiles_det pd","sm.subm_codigo=pd.perdet_submcodigo and subm_menucodigo=$codigo and subm_status=1 and subm_nivel=1 and perdet_S=1 and perdet_perfcodigo=$_SESSION[usuario_perfil]");
         } else {
-            $consulsubmenu = paraTodos::arrayConsulta("*","menu_submenu sm, perfiles_det pd","sm.subm_codigo=pd.perdet_submcodigo and subm_conexion=$subc and subm_status=1 and subm_nivel=$nivel and perdet_S=1");
+            $consulsubmenu = paraTodos::arrayConsulta("distinct sm.*","menu_submenu sm, perfiles_det pd","sm.subm_codigo=pd.perdet_submcodigo and subm_conexion=$subc and subm_status=1 and subm_nivel=$nivel and perdet_S=1 and perdet_perfcodigo=$_SESSION[usuario_perfil]");
         }
         foreach($consulsubmenu as $submenu){
             if (strlen($submenu['subm_descripcion']) > 25) {
@@ -34,7 +34,7 @@ Class Menu {
     }
     function menuprinc() {
         /*Se consulta menu principal*/
-        $consulmenu = paraTodos::arrayConsulta("distinct m.*","menu m, perfiles_det pd","m.menu_codigo=pd.perdet_menucodigo and m.menu_status=1 and perdet_S=1");
+        $consulmenu = paraTodos::arrayConsulta("distinct m.*","menu m, perfiles_det pd","m.menu_codigo=pd.perdet_menucodigo and m.menu_status=1 and perdet_S=1 and perdet_perfcodigo=$_SESSION[usuario_perfil]");
         foreach($consulmenu as $menu){
             if (strlen($menu['menu_descripcion']) > 14) {
               $menuli = substr($menu['menu_descripcion'],0,14).'... ';

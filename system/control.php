@@ -33,13 +33,20 @@
         $modelo = $rowenlace[$menusuf."modelo"];
         $jquery = $rowenlace[$menusuf."jquery"];
     }
-    if($modelo!=""){
+    /*Se verifican los permisos para el modulo llamado*/
+    $consulpermisos = paraTodos::arrayConsulta("*", "perfiles_det", "perdet_perfcodigo=$_SESSION[usuario_perfil]");
+    $accPermisos['S'] = $consulpermisos[0][perdet_S];
+    $accPermisos['U'] = $consulpermisos[0][perdet_U];
+    $accPermisos['D'] = $consulpermisos[0][perdet_D];
+    $accPermisos['I'] = $consulpermisos[0][perdet_I];
+    $accPermisos['P'] = $consulpermisos[0][perdet_P];
+    if($modelo!="" and $_POST[actd]==""){
         include($modelo);
     }
     if($enlace!=""){
         include($enlace);
     }
-    if($jquery!=""){
+    if($jquery!="" and $_POST[actd]==""){
         ?>
     <script>
         <?php include($jquery);?>

@@ -1,10 +1,10 @@
 <?php
     class datosConexion{
         //////////////////MYSQL///////////////////////
-        protected $servidorMy   =   "localhost";
-        protected $dbMy         =   "comision";
-        protected $usuarioMy    =   "root";
-        protected $claveMy      =   "";
-        protected $puertoMy     =   "3306";
+        public $servidorMy   =   "localhost";
+        public $dbMy         =   "comision";
+        public $usuarioMy    =   "root";
+        public $claveMy      =   "";
+        public $puertoMy     =   "3306";
     }
 ?>
